@@ -1,0 +1,3 @@
+/Users/tkhara/CLionProjects/Assignment5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/tkhara/CLionProjects/Assignment5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tkhara/CLionProjects/Assignment5/cmake-build-debug/CMakeFiles/Assignment5.dir

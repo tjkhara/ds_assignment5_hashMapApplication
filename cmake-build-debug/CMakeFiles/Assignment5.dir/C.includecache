@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tkhara/CLionProjects/Assignment5/hashMap.c
+hashMap.h
+/Users/tkhara/CLionProjects/Assignment5/hashMap.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+assert.h
+-
+ctype.h
+-
+
+/Users/tkhara/CLionProjects/Assignment5/hashMap.h
+
