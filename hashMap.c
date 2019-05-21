@@ -262,12 +262,18 @@ void hashMapPut(HashMap* map, const char* key, int value)
         // when other links are added to NULL)
         if(map->table[hashIndex] == NULL)
         {
+            // Since this is the first link make the next pointer of this link NULL
             newlink = hashLinkNew(key, value, NULL);
         }
         else
         {
+            // Since this is not the last link in the linked list make the next pointer
+            // equal to map->table[hashIndex]
+            // This link will become the new first link
             newlink = hashLinkNew(key, value, map->table[hashIndex]);
         }
+        //  Connect the table to this new link
+        // This link is the new first link
         map->table[hashIndex] = newlink;
         map->size++;
         if((map->size/(double)map->capacity >= MAX_TABLE_LOAD))
