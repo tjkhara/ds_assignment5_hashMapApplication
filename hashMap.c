@@ -260,18 +260,12 @@ void hashMapPut(HashMap* map, const char* key, int value)
 
         // If this is the first link set the next link of the first link (which will be the last link
         // when other links are added to NULL)
-        if(map->table[hashIndex] == NULL)
-        {
-            // Since this is the first link make the next pointer of this link NULL
-            newlink = hashLinkNew(key, value, NULL);
-        }
-        else
-        {
-            // Since this is not the last link in the linked list make the next pointer
-            // equal to map->table[hashIndex]
-            // This link will become the new first link
-            newlink = hashLinkNew(key, value, map->table[hashIndex]);
-        }
+
+        // Since this is not the last link in the linked list make the next pointer
+        // equal to map->table[hashIndex]
+        // This link will become the new first link
+        newlink = hashLinkNew(key, value, map->table[hashIndex]);
+
         //  Connect the table to this new link
         // This link is the new first link
         map->table[hashIndex] = newlink;
@@ -453,7 +447,7 @@ void hashMapPrint(HashMap* map)
   // Make a listptr
   struct HashLink* linkptr;
 
-  for(int i = 0; i < map->size; i++)
+  for(int i = 0; i < map->capacity; i++)
   {
       linkptr = map->table[i];
 

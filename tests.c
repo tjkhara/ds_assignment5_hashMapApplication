@@ -353,6 +353,20 @@ void addAllTests(CuSuite* suite)
 
 int main()
 {
+
+    /*HashMap* map = hashMapNew(10);
+    hashMapPut(map,"a",10);
+    hashMapPut(map,"b",20);
+    hashMapPut(map,"c",30);
+    hashMapPut(map,"d",40);
+    hashMapPut(map,"e",50);
+    hashMapPut(map,"f",60);
+    hashMapPut(map,"g",70);
+    hashMapPut(map,"h",80);
+    hashMapPut(map,"i",90);
+    hashMapPrint(map);*/
+
+    // Original test case start
     CuSuite* suite = CuSuiteNew();
     addAllTests(suite);
     CuSuiteRun(suite);
@@ -362,6 +376,7 @@ int main()
     printf("\n%s\n", output->buffer);
     CuStringDelete(output);
     CuSuiteDelete(suite);
+    // Original test case end
     return 0;
 }
 
