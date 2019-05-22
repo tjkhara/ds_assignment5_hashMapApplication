@@ -148,7 +148,7 @@ int* hashMapGet(HashMap* map, const char* key)
     while(linkptr != NULL)
     {
         // strcmp returns 0 if the strings are equal and 1 if not equal
-        if(!strcmp(map->table[index]->key,key)) // check
+        if(!(int)strcmp(map->table[index]->key,key)) // check
         {
             return &(map->table[index]->value);
         }
@@ -300,9 +300,11 @@ void hashMapRemove(HashMap* map, const char* key)
     // Make a pointer that follows the linkptr
     struct HashLink* prevptr = linkptr;
 
-    // First step
+    // For the first link
+    // If the key matches delete this link
     if(!strcmp(linkptr->key, key))
     {
+
         // If the  key is found at the first step
         // Connect the map->table[hashIndex] pointer to the next link
         map->table[hashIndex] = map->table[hashIndex]->next;
@@ -310,16 +312,18 @@ void hashMapRemove(HashMap* map, const char* key)
         // Delete the first link
         hashLinkDelete(linkptr);
     }
-    else
+    else // If the key does not match move to the next link
     {
         // Move the linkptr to the next link
         linkptr = linkptr->next;
     }
 
 
+    // Second link onwards
+    // We are deleting all instances
     while(linkptr != NULL)
     {
-        if(!strcmp(linkptr->key, key))
+        if(!strcmp(linkptr->key, key)) // if key matches
         {
             // Key matches
             // Connect previous link to next link
@@ -446,6 +450,8 @@ void hashMapPrint(HashMap* map)
 
   // Make a listptr
   struct HashLink* linkptr;
+
+  printf("\n\n");
 
   for(int i = 0; i < map->capacity; i++)
   {

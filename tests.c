@@ -354,20 +354,46 @@ void addAllTests(CuSuite* suite)
 int main()
 {
 
-    /*HashMap* map = hashMapNew(10);
-    hashMapPut(map,"a",10);
-    hashMapPut(map,"b",20);
-    hashMapPut(map,"c",30);
-    hashMapPut(map,"d",40);
-    hashMapPut(map,"e",50);
-    hashMapPut(map,"f",60);
-    hashMapPut(map,"g",70);
-    hashMapPut(map,"h",80);
-    hashMapPut(map,"i",90);
-    hashMapPrint(map);*/
+    HashMap* map = hashMapNew(10);
+    hashMapPut(map,"a",0);
+    hashMapPut(map,"c",1);
+    hashMapPut(map,"d",2);
+    hashMapPut(map,"f",3);
+    hashMapPut(map,"g",4);
+
+    printf("Printing map after adding a,b,c,d,f and g\n");
+    hashMapPrint(map);
+
+
+    printf("\nThe value of key a is %d", *(hashMapGet(map,"a")));
+    printf("\nThe value of key c is %d", *(hashMapGet(map,"c")));
+    printf("\nThe value of key d is %d", *(hashMapGet(map,"d")));
+    printf("\nThe value of key f is %d", *(hashMapGet(map,"f")));
+    printf("\nThe value of key g is %d\n", *(hashMapGet(map,"g")));
+
+    hashMapRemove(map,"a");
+    printf("\nPrinting map after removing a\n");
+    hashMapPrint(map);
+
+    hashMapRemove(map,"c");
+    printf("\nPrinting map after removing c\n");
+    hashMapPrint(map);
+
+    hashMapRemove(map,"d");
+    printf("\nPrinting map after removing d\n");
+    hashMapPrint(map);
+
+    hashMapRemove(map,"f");
+    printf("\nPrinting map after removing f\n");
+    hashMapPrint(map);
+
+    hashMapRemove(map,"g");
+    printf("\nPrinting map after removing g\n");
+    hashMapPrint(map);
+
 
     // Original test case start
-    CuSuite* suite = CuSuiteNew();
+   /* CuSuite* suite = CuSuiteNew();
     addAllTests(suite);
     CuSuiteRun(suite);
     CuString* output = CuStringNew();
@@ -375,7 +401,7 @@ int main()
     CuSuiteDetails(suite, output);
     printf("\n%s\n", output->buffer);
     CuStringDelete(output);
-    CuSuiteDelete(suite);
+    CuSuiteDelete(suite);*/
     // Original test case end
     return 0;
 }
