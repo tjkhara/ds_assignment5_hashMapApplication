@@ -87,8 +87,11 @@ void hashMapCleanUp(HashMap* map)
     // Loop through the array (table)
     for(int i = 0; i < map->size; i++)
     {
-        // Delete the links
-        hashLinkDelete(map->table[i]);
+        if(map->table[i] != NULL)
+        {
+            // Delete the links
+            hashLinkDelete(map->table[i]);
+        }
     }
 
 }
@@ -148,9 +151,9 @@ int* hashMapGet(HashMap* map, const char* key)
     while(linkptr != NULL)
     {
         // strcmp returns 0 if the strings are equal and 1 if not equal
-        if(!(int)strcmp(map->table[index]->key,key)) // check
+        if(!(int)strcmp(linkptr->key,key)) // check
         {
-            return &(map->table[index]->value);
+            return &(linkptr->value);
         }
         else
         {
@@ -294,6 +297,10 @@ void hashMapRemove(HashMap* map, const char* key)
 
     // For linked list traversal create a pointer
     // Point it at the first element of the linked list
+    if(map->table[hashIndex] == NULL)
+    {
+        return;
+    }
     struct HashLink* linkptr = map->table[hashIndex];
 
     // Have to make sure that the linked list stays connected
@@ -311,6 +318,12 @@ void hashMapRemove(HashMap* map, const char* key)
 
         // Delete the first link
         hashLinkDelete(linkptr);
+
+        // Set linkptr and prevptr equal to NULL
+        linkptr = prevptr = NULL;
+
+        //Reduce size
+        map->size--;
     }
     else // If the key does not match move to the next link
     {
@@ -331,6 +344,9 @@ void hashMapRemove(HashMap* map, const char* key)
 
             // Delete the link that linkptr points to
             hashLinkDelete(linkptr);
+
+            // Reduce size
+            map->size--;
         }
         else
         {
@@ -435,7 +451,7 @@ int hashMapEmptyBuckets(HashMap* map)
 float hashMapTableLoad(HashMap* map)
 {
     // FIXME: implement
-    return map->size/(double)map->capacity;
+    return map->size/(float)map->capacity;
 }
 
 /**
