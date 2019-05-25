@@ -78,19 +78,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/tkhara/CLionProjects/Assignment5/CuTest.c">
-			<Option target="Assignment5"/>
-		</Unit>
-		<Unit filename="/Users/tkhara/CLionProjects/Assignment5/CuTest.h">
-			<Option target="Assignment5"/>
-		</Unit>
 		<Unit filename="/Users/tkhara/CLionProjects/Assignment5/hashMap.c">
 			<Option target="Assignment5"/>
 		</Unit>
 		<Unit filename="/Users/tkhara/CLionProjects/Assignment5/hashMap.h">
 			<Option target="Assignment5"/>
 		</Unit>
-		<Unit filename="/Users/tkhara/CLionProjects/Assignment5/tests.c">
+		<Unit filename="/Users/tkhara/CLionProjects/Assignment5/main.c">
 			<Option target="Assignment5"/>
 		</Unit>
 		<Unit filename="/Users/tkhara/CLionProjects/Assignment5/CMakeLists.txt">

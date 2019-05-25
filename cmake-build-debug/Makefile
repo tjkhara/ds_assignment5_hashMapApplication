@@ -123,33 +123,6 @@ Assignment5/fast:
 	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/build
 .PHONY : Assignment5/fast
 
-CuTest.o: CuTest.c.o
-
-.PHONY : CuTest.o
-
-# target to build an object file
-CuTest.c.o:
-	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/CuTest.c.o
-.PHONY : CuTest.c.o
-
-CuTest.i: CuTest.c.i
-
-.PHONY : CuTest.i
-
-# target to preprocess a source file
-CuTest.c.i:
-	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/CuTest.c.i
-.PHONY : CuTest.c.i
-
-CuTest.s: CuTest.c.s
-
-.PHONY : CuTest.s
-
-# target to generate assembly for a file
-CuTest.c.s:
-	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/CuTest.c.s
-.PHONY : CuTest.c.s
-
 hashMap.o: hashMap.c.o
 
 .PHONY : hashMap.o
@@ -177,32 +150,32 @@ hashMap.c.s:
 	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/hashMap.c.s
 .PHONY : hashMap.c.s
 
-tests.o: tests.c.o
+main.o: main.c.o
 
-.PHONY : tests.o
+.PHONY : main.o
 
 # target to build an object file
-tests.c.o:
-	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/tests.c.o
-.PHONY : tests.c.o
+main.c.o:
+	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/main.c.o
+.PHONY : main.c.o
 
-tests.i: tests.c.i
+main.i: main.c.i
 
-.PHONY : tests.i
+.PHONY : main.i
 
 # target to preprocess a source file
-tests.c.i:
-	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/tests.c.i
-.PHONY : tests.c.i
+main.c.i:
+	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/main.c.i
+.PHONY : main.c.i
 
-tests.s: tests.c.s
+main.s: main.c.s
 
-.PHONY : tests.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-tests.c.s:
-	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/tests.c.s
-.PHONY : tests.c.s
+main.c.s:
+	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -213,15 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Assignment5"
-	@echo "... CuTest.o"
-	@echo "... CuTest.i"
-	@echo "... CuTest.s"
 	@echo "... hashMap.o"
 	@echo "... hashMap.i"
 	@echo "... hashMap.s"
-	@echo "... tests.o"
-	@echo "... tests.i"
-	@echo "... tests.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

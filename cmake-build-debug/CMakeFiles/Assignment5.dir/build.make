@@ -57,18 +57,18 @@ include CMakeFiles/Assignment5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Assignment5.dir/flags.make
 
-CMakeFiles/Assignment5.dir/tests.c.o: CMakeFiles/Assignment5.dir/flags.make
-CMakeFiles/Assignment5.dir/tests.c.o: ../tests.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tkhara/CLionProjects/Assignment5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Assignment5.dir/tests.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment5.dir/tests.c.o   -c /Users/tkhara/CLionProjects/Assignment5/tests.c
+CMakeFiles/Assignment5.dir/main.c.o: CMakeFiles/Assignment5.dir/flags.make
+CMakeFiles/Assignment5.dir/main.c.o: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tkhara/CLionProjects/Assignment5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Assignment5.dir/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment5.dir/main.c.o   -c /Users/tkhara/CLionProjects/Assignment5/main.c
 
-CMakeFiles/Assignment5.dir/tests.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment5.dir/tests.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tkhara/CLionProjects/Assignment5/tests.c > CMakeFiles/Assignment5.dir/tests.c.i
+CMakeFiles/Assignment5.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment5.dir/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tkhara/CLionProjects/Assignment5/main.c > CMakeFiles/Assignment5.dir/main.c.i
 
-CMakeFiles/Assignment5.dir/tests.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment5.dir/tests.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tkhara/CLionProjects/Assignment5/tests.c -o CMakeFiles/Assignment5.dir/tests.c.s
+CMakeFiles/Assignment5.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment5.dir/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tkhara/CLionProjects/Assignment5/main.c -o CMakeFiles/Assignment5.dir/main.c.s
 
 CMakeFiles/Assignment5.dir/hashMap.c.o: CMakeFiles/Assignment5.dir/flags.make
 CMakeFiles/Assignment5.dir/hashMap.c.o: ../hashMap.c
@@ -83,34 +83,19 @@ CMakeFiles/Assignment5.dir/hashMap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment5.dir/hashMap.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tkhara/CLionProjects/Assignment5/hashMap.c -o CMakeFiles/Assignment5.dir/hashMap.c.s
 
-CMakeFiles/Assignment5.dir/CuTest.c.o: CMakeFiles/Assignment5.dir/flags.make
-CMakeFiles/Assignment5.dir/CuTest.c.o: ../CuTest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tkhara/CLionProjects/Assignment5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Assignment5.dir/CuTest.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Assignment5.dir/CuTest.c.o   -c /Users/tkhara/CLionProjects/Assignment5/CuTest.c
-
-CMakeFiles/Assignment5.dir/CuTest.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Assignment5.dir/CuTest.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tkhara/CLionProjects/Assignment5/CuTest.c > CMakeFiles/Assignment5.dir/CuTest.c.i
-
-CMakeFiles/Assignment5.dir/CuTest.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Assignment5.dir/CuTest.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tkhara/CLionProjects/Assignment5/CuTest.c -o CMakeFiles/Assignment5.dir/CuTest.c.s
-
 # Object files for target Assignment5
 Assignment5_OBJECTS = \
-"CMakeFiles/Assignment5.dir/tests.c.o" \
-"CMakeFiles/Assignment5.dir/hashMap.c.o" \
-"CMakeFiles/Assignment5.dir/CuTest.c.o"
+"CMakeFiles/Assignment5.dir/main.c.o" \
+"CMakeFiles/Assignment5.dir/hashMap.c.o"
 
 # External object files for target Assignment5
 Assignment5_EXTERNAL_OBJECTS =
 
-Assignment5: CMakeFiles/Assignment5.dir/tests.c.o
+Assignment5: CMakeFiles/Assignment5.dir/main.c.o
 Assignment5: CMakeFiles/Assignment5.dir/hashMap.c.o
-Assignment5: CMakeFiles/Assignment5.dir/CuTest.c.o
 Assignment5: CMakeFiles/Assignment5.dir/build.make
 Assignment5: CMakeFiles/Assignment5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tkhara/CLionProjects/Assignment5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Assignment5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tkhara/CLionProjects/Assignment5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Assignment5"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Assignment5.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

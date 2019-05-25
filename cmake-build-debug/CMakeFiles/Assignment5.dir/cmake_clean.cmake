@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Assignment5.dir/tests.c.o"
+  "CMakeFiles/Assignment5.dir/main.c.o"
   "CMakeFiles/Assignment5.dir/hashMap.c.o"
-  "CMakeFiles/Assignment5.dir/CuTest.c.o"
   "Assignment5.pdb"
   "Assignment5"
 )
