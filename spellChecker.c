@@ -128,10 +128,6 @@ int main(int argc, const char** argv)
 
     clock_t timer = clock();
     loadDictionary(file, map);
-
-    // Test print
-//    hashMapPrint(map);
-
     timer = clock() - timer;
     printf("Dictionary loaded in %f seconds\n", (float)timer / (float)CLOCKS_PER_SEC);
     fclose(file);
@@ -146,10 +142,6 @@ int main(int argc, const char** argv)
         
         // Implement the spell checker code here..
 
-        // Compare the input buffer to the words in the dictionary
-        // Compute their Levenshtein distance
-        // Store that distance as the value for each key in the table
-
         // Traverse the whole map START
 
 
@@ -158,16 +150,6 @@ int main(int argc, const char** argv)
 
         if(!hashMapGet(map,inputBuffer)) // Key is not in the map
         {
-            // Generate an array of 5 words that are closest matches to the input buffer
-            // based on the lowest Levenshtein distance
-            // START
-
-            // Calculate the Levenshtein distance
-            // string s1 is input buffer and string s2 is each word in the map (one at a time)
-            // Iterate over the entire map
-
-//            printf("\nCapacity of map %d\n", map->capacity);
-
             int i;
 
             for(i = 0; i < map->capacity; i++)
@@ -189,13 +171,6 @@ int main(int argc, const char** argv)
             }
 
             // END
-
-            // Print the array including the messages
-            // "The inputted word .... is spelled incorrectly. Did you mean .... ?
-
-            printf("\nKey is not in the map\n");
-
-//            hashMapPrint(map);
 
             // Find the 5 closest values
 
@@ -275,11 +250,6 @@ int main(int argc, const char** argv)
             }
 
             int z;
-            /*printf("\n Printing values \n");
-            for(z = 0; z < 5; z++)
-            {
-                printf("\n%d\n", arr[z]);
-            }*/
 
             printf("\nThe inputted word %s is spelled incorrectly\n", inputBuffer);
             for(z = 0; z < 5; z++)
@@ -287,17 +257,15 @@ int main(int argc, const char** argv)
                 printf("\nDid you mean %s?\n",strs[z]);
             }
 
-            /*printf("\nPrinting the strings array\n");
-            for(z = 0; z < 5; z++)
-            {
-                printf("\n%s\n",strs[z]);
-            }*/
-
         }
         else // Key is in the map
         {
-            printf("\nThe inputted word %s is spelled correctly\n", inputBuffer);
+            if(strcmp(inputBuffer,"quit") != 0) // The word quit is reserved for quitting
+            {
+                printf("\nThe inputted word %s is spelled correctly\n", inputBuffer);
+            }
         }
+
 
         // Traverse the whole map END
 
@@ -306,6 +274,8 @@ int main(int argc, const char** argv)
         {
             quit = 1;
         }
+
+
     }
     hashMapDelete(map);
     return 0;

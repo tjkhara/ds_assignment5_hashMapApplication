@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac33c120-fb64-421b-bcf6-4db1c688373e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spellChecker.c" beforeDir="false" afterPath="$PROJECT_DIR$/spellChecker.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spellChecker.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+            <state relative-caret-position="490">
+              <caret line="262" column="89" selection-start-line="262" selection-start-column="89" selection-end-line="262" selection-end-column="89" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -193,7 +192,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61782000" />
+    <option name="totallyTimeSpent" value="62739000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -208,7 +207,7 @@
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1799787" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1799787" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -416,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spellChecker.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+        <state relative-caret-position="490">
+          <caret line="262" column="89" selection-start-line="262" selection-start-column="89" selection-end-line="262" selection-end-column="89" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
