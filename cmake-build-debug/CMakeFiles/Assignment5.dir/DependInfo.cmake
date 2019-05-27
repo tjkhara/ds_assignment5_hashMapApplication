@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/tkhara/CLionProjects/Assignment5/hashMap.c" "/Users/tkhara/CLionProjects/Assignment5/cmake-build-debug/CMakeFiles/Assignment5.dir/hashMap.c.o"
-  "/Users/tkhara/CLionProjects/Assignment5/main.c" "/Users/tkhara/CLionProjects/Assignment5/cmake-build-debug/CMakeFiles/Assignment5.dir/main.c.o"
+  "/Users/tkhara/CLionProjects/Assignment5/spellChecker.c" "/Users/tkhara/CLionProjects/Assignment5/cmake-build-debug/CMakeFiles/Assignment5.dir/spellChecker.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

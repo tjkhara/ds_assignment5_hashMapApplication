@@ -230,25 +230,57 @@ void hashMapPut(HashMap* map, const char* key, int value)
 {
     // FIXME: implement
 
+    printf("\nEntered put function\n");
+
     // Find the correct bucket using the hash function
     int hashIndex = HASH_FUNCTION(key) % map->capacity;
     if(hashIndex < 0)
         hashIndex = hashIndex + map->capacity;
 
+    printf("\nHash Index is %d\n", hashIndex);
+
     // If the map contains the key, update the key
     if(hashMapContainsKey(map,key))
     {
+        printf("\nThe map contains the key\n");
+
         // Go to the right bucket
         struct HashLink* linkptr = map->table[hashIndex];
+
+        if(linkptr == NULL)
+        {
+            printf("\nis null\n");
+        }
+        else
+        {
+            printf("\nnot null\n");
+        }
 
         // Search all the links in that bucket
         while(linkptr != NULL)
         {
+            printf("\ninside while\n");
+
             // Check to see if the key matches
             if(!strcmp(linkptr->key,key)) //check
             {
-                strcpy(linkptr->key,key); // check use strcpy instead
+                if(!strcmp(linkptr->key,key))
+                {
+                    printf("\nkey matches\n");
+                }
+                else
+                {
+                    printf("\nkey does not match\n");
+                }
+
+//                strcpy(linkptr->key,key); // check use strcpy instead
+
+                printf("\nThe value of the key is %s\n", linkptr->key);
+
+
                 linkptr->value = value;
+
+                printf("\nThe value in the value is %d\n", linkptr->value);
                 return;
             }
             else
