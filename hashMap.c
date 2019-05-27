@@ -247,7 +247,7 @@ void hashMapPut(HashMap* map, const char* key, int value)
             // Check to see if the key matches
             if(!strcmp(linkptr->key,key)) //check
             {
-                strcpy(linkptr->key,key); // check use strcpy instead
+//                strcpy(linkptr->key,key); // check use strcpy instead
                 linkptr->value = value;
                 return;
             }
