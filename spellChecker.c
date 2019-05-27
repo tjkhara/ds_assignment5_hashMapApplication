@@ -77,9 +77,6 @@ void loadDictionary(FILE* file, HashMap* map)
     // Be sure to free the word after you are done with it here.
     free(theNextWord);
 
-    // Close the file
-    fclose(file);
-
     //***** Code from main END ******//
 }
 
