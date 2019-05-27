@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Assignment5.dir/main.c.o"
+  "CMakeFiles/Assignment5.dir/spellChecker.c.o"
   "CMakeFiles/Assignment5.dir/hashMap.c.o"
   "Assignment5.pdb"
   "Assignment5"

@@ -8,18 +8,18 @@
 
 /Users/tkhara/CLionProjects/Assignment5/hashMap.h
 
-/Users/tkhara/CLionProjects/Assignment5/main.c
+/Users/tkhara/CLionProjects/Assignment5/spellChecker.c
 hashMap.h
 /Users/tkhara/CLionProjects/Assignment5/hashMap.h
-stdlib.h
--
-stdio.h
--
-string.h
+assert.h
 -
 time.h
 -
-assert.h
+stdio.h
+-
+stdlib.h
+-
+string.h
 -
 ctype.h
 -

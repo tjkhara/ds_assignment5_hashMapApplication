@@ -161,7 +161,6 @@ int main(int argc, const char** argv)
 
         if(!hashMapGet(map,inputBuffer)) // Key is not in the map
         {
-            printf("\nInside if\n");
             // Generate an array of 5 words that are closest matches to the input buffer
             // based on the lowest Levenshtein distance
             // START
@@ -170,7 +169,7 @@ int main(int argc, const char** argv)
             // string s1 is input buffer and string s2 is each word in the map (one at a time)
             // Iterate over the entire map
 
-            printf("\nCapacity of map %d\n", map->capacity);
+//            printf("\nCapacity of map %d\n", map->capacity);
 
             int i;
 
@@ -199,7 +198,104 @@ int main(int argc, const char** argv)
 
             printf("\nKey is not in the map\n");
 
-            hashMapPrint(map);
+//            hashMapPrint(map);
+
+            // Find the 5 closest values
+
+            int min = 1000;
+            char* minStr;
+            int arr[5];
+            char* strs[5];
+            int skip = 0;
+
+            for(i = 0; i < 5; i++)
+            {
+                // Traverse the entire hash map
+                for(int j = 0; j < map->capacity; j++)
+                {
+                    linkptr = map->table[j];
+
+                    while(linkptr != NULL)
+                    {
+                        skip = 0;
+
+                        if(i == 0)
+                        {
+                            for(int y = 0; y < i; y++)
+                            {
+                                if(!strcmp(strs[y],linkptr->key))
+                                {
+                                    skip = 1;
+
+                                }
+                            }
+
+                            if(skip)
+                            {
+                                linkptr = linkptr->next;
+                                continue;
+                            }
+
+                            if(min > linkptr->value)
+                            {
+                                min = linkptr->value;
+                                minStr = linkptr->key;
+                            }
+                        }
+                        else // if i > 0
+                        {
+                            for(int y = 0; y < i; y++)
+                            {
+                                if(!strcmp(strs[y],linkptr->key))
+                                {
+                                    skip = 1;
+
+                                }
+                            }
+
+                            if(skip)
+                            {
+                                linkptr = linkptr->next;
+                                continue;
+                            }
+
+                            if(min > linkptr->value && linkptr->value >= arr[i - 1])
+                            {
+                                min = linkptr->value;
+                                minStr = linkptr->key;
+                            }
+                        }
+
+
+                        linkptr = linkptr->next;
+                    }
+                }
+
+                arr[i] = min;
+                strs[i] = minStr;
+
+                min = 1000;
+            }
+
+            int z;
+            /*printf("\n Printing values \n");
+            for(z = 0; z < 5; z++)
+            {
+                printf("\n%d\n", arr[z]);
+            }*/
+
+            printf("\nThe inputted word %s is spelled incorrectly\n", inputBuffer);
+            for(z = 0; z < 5; z++)
+            {
+                printf("\nDid you mean %s?\n",strs[z]);
+            }
+
+            /*printf("\nPrinting the strings array\n");
+            for(z = 0; z < 5; z++)
+            {
+                printf("\n%s\n",strs[z]);
+            }*/
+
         }
         else // Key is in the map
         {
