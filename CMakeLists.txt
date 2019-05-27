@@ -3,4 +3,4 @@ project(Assignment5 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(Assignment5 spellChecker.c hashMap.c hashMap.h)
+add_executable(Assignment5 main.c hashMap.c hashMap.h)

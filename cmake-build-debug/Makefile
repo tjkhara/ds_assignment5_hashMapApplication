@@ -150,32 +150,32 @@ hashMap.c.s:
 	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/hashMap.c.s
 .PHONY : hashMap.c.s
 
-spellChecker.o: spellChecker.c.o
+main.o: main.c.o
 
-.PHONY : spellChecker.o
+.PHONY : main.o
 
 # target to build an object file
-spellChecker.c.o:
-	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/spellChecker.c.o
-.PHONY : spellChecker.c.o
+main.c.o:
+	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/main.c.o
+.PHONY : main.c.o
 
-spellChecker.i: spellChecker.c.i
+main.i: main.c.i
 
-.PHONY : spellChecker.i
+.PHONY : main.i
 
 # target to preprocess a source file
-spellChecker.c.i:
-	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/spellChecker.c.i
-.PHONY : spellChecker.c.i
+main.c.i:
+	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/main.c.i
+.PHONY : main.c.i
 
-spellChecker.s: spellChecker.c.s
+main.s: main.c.s
 
-.PHONY : spellChecker.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-spellChecker.c.s:
-	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/spellChecker.c.s
-.PHONY : spellChecker.c.s
+main.c.s:
+	$(MAKE) -f CMakeFiles/Assignment5.dir/build.make CMakeFiles/Assignment5.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo "... hashMap.o"
 	@echo "... hashMap.i"
 	@echo "... hashMap.s"
-	@echo "... spellChecker.o"
-	@echo "... spellChecker.i"
-	@echo "... spellChecker.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

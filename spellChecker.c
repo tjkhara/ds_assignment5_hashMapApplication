@@ -177,33 +177,16 @@ int main(int argc, const char** argv)
             for(i = 0; i < map->capacity; i++)
             {
                 linkptr = map->table[i];
-                printf("\nThe value of i is %d\n", i);
 
-                printf("\nInside for loop\n");
-
-                if(linkptr == NULL)
-                {
-                    printf("\nYes NULL\n");
-                }
-                else
-                {
-                    printf("\nNot NULL\n");
-                }
                 while(linkptr != NULL)
                 {
-                    printf("\nInside while\n");
-                    printf("\nThe word we are on now is %s\n", linkptr->key);
 
                     // Calc the LD
 
                     int ld = levenshtein(inputBuffer, linkptr->key);
 
-                    printf("\nThe LD of this word is %d\n", ld);
-
                     // Store the LD in the links
                     hashMapPut(map,linkptr->key, ld);
-
-                    printf("\nReading the LD from the link %d\n", *hashMapGet(map,linkptr->key));
 
                     linkptr = linkptr->next;
                 }
@@ -216,7 +199,7 @@ int main(int argc, const char** argv)
 
             printf("\nKey is not in the map\n");
 
-//            hashMapPrint(map);
+            hashMapPrint(map);
         }
         else // Key is in the map
         {

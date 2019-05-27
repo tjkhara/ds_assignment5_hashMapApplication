@@ -143,7 +143,7 @@ int main(int argc, const char** argv)
 
         if(linkptr != NULL)
         {
-            printf("Bucket %d -> ",i);
+            printf("\nBucket %d -> ",i);
         }
 
         while(linkptr != NULL)
@@ -155,7 +155,6 @@ int main(int argc, const char** argv)
             linkptr = linkptr->next;
         }
 
-        printf("\n");
     }
 
     // --- Concordance code ends here ---

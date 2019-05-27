@@ -4,6 +4,6 @@
 CMakeFiles/Assignment5.dir/hashMap.c.o: ../hashMap.c
 CMakeFiles/Assignment5.dir/hashMap.c.o: ../hashMap.h
 
-CMakeFiles/Assignment5.dir/spellChecker.c.o: ../hashMap.h
-CMakeFiles/Assignment5.dir/spellChecker.c.o: ../spellChecker.c
+CMakeFiles/Assignment5.dir/main.c.o: ../hashMap.h
+CMakeFiles/Assignment5.dir/main.c.o: ../main.c
 
